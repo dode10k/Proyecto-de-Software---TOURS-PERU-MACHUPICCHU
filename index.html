@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Reservas</title>
+</head>
+
+<body>
+    <div>
+        <h1>Gestión de Reservas</h1>
+        <p>Sistema de Gestión de TOURS-PERU-MACHUPICCHU</p>
+    </div>
+
+    <div>
+        <h2>Agregar Reserva</h2>
+        <form>
+            <label>ID:</label><br>
+            <input type="text" name="id"><br><br>
+
+            <label>DNI:</label><br>
+            <input type="text" name="dni"><br><br>
+
+            <label>Nombres:</label><br>
+            <input type="text" name="nombres"><br><br>
+
+            <label>Apellidos:</label><br>
+            <input type="text" name="apellidos"><br><br>
+
+            <label>Género:</label><br>
+            <select name="genero">
+                <option>Femenino</option>
+                <option>Masculino</option>
+            </select><br><br>
+
+            <label>Fecha de nacimiento:</label><br>
+            <input type="date" name="fecha_nacimiento"><br><br>
+
+            <input type="submit" value="Guardar Reserva">
+            <input type="reset" value="Cancelar">
+        </form>
+    </div>
+
+    <div>
+        <h2>Editar Reserva</h2>
+        <form>
+            <label>ID de Reserva:</label><br>
+            <input type="text" name="id_reserva"><br><br>
+
+            <label>Campo a modificar:</label><br>
+            <input type="text" name="campo"><br><br>
+
+            <label>Nuevo valor:</label><br>
+            <input type="text" name="nuevo_valor"><br><br>
+
+            <input type="submit" value="Guardar Cambios">
+            <input type="reset" value="Cancelar">
+        </form>
+    </div>
+
+    <div>
+        <h2>Cancelar Reserva</h2>
+        <form>
+            <label>ID de la Reserva:</label><br>
+            <input type="text" name="id_cancelar"><br><br>
+
+            <label>Motivo de la cancelación:</label><br>
+            <input type="text" name="motivo"><br><br>
+
+            <input type="submit" value="Confirmar Cancelación">
+            <input type="reset" value="Volver">
+        </form>
+    </div>
+
+    <div>
+        <h2>Buscar Reserva</h2>
+        <form>
+            <label>DNI del usuario:</label><br>
+            <input type="text" name="dni_buscar"><br><br>
+
+            <input type="submit" value="Buscar Reserva">
+        </form>
+    </div>
+</body>
+</html>
